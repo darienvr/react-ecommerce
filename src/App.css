@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*================================== NAVBAR ==============================0*/
+
+.navbar {
+  height: 5rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedor-logo {
+  font-weight: bold;
+  color: #1e256a;
+  width: auto;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.links {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  padding: 0 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+  font-size: larger;
+  text-decoration: none;
+  list-style: none;
+}
+
+.links a:hover {
+  color: #2b2724;
+  text-decoration:underline;
+}
+
+.carrito {
+  position: relative;
+  top: -10px;
+  z-index: -1;
+}
+
+.login {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bars-container{
+  display: none;
+}
+
+.circle-count{
+  font-size:small;
+  border-radius: 50%;
+  background-color:#926d57;
+  color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-items: center;
+  position:relative;
+  top: 0;
+  right: -15px;
+}
+
+.circle-count:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .navbar{
+    display: flex;
+    align-items: center;
+  }
+
+  .links-container{
+    display: none;
+  }
+
+  .links-login-container{
+    display: none
+  }
+
+  .bars-container{
+    margin-right: 2rem;
+    display: grid;
+  }
+
+  .btn-sidebar-open{
+    color:#3f457d;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+  }
+
+  .btn-sidebar-open:hover {
+    color:#151a4c;
+  }
+}
+
+/*============================ SIDEBAR ==================================*/
+
+.sidebar{
+  display: none;
+}
+
+.btn-close-sidebar{
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar{
+    position: fixed;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .show-sidebar{
+    display:block;
+    z-index: 10;
+  }
+
+  .sidebar-logo{
+    font-weight: bold;
+    color: #1e256a;
+    font-size: 1.5rem;
+    padding: 1.3rem 6%;
+  }
+
+  .links-sidebar{
+
+    padding: 1rem 0;
+  }
+
+  a:hover {
+    text-decoration:none;
+  }
+
+  .link-sidebar {
+    padding: 1rem 100% 1rem 1.5rem;
+  }
+
+  li{
+    padding: 1rem 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .link-sidebar:hover{
+    background-color: #efeae7;
+  }
+
+  .btn-close-sidebar{
+    display: grid;
+    position: absolute;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    font-size: 1.8rem;
+    color: rgb(172, 17, 17);
+    top: 1.3rem;
+    right: 2rem;
+  }
+
+  .btn-close-sidebar:hover{
+    color: rgb(218, 33, 33);
+  }
+
+  .cart-login-sidebar{
+    background-color: #fff;
+    margin: 0 40%;
+    width: auto;
+    height: auto;
+  }
+
+  .circle-count{
+    position: absolute;
+    top: 290px;
+    left: 45%;
+  }
+
+  .login-sidebar{
+    margin-left: 2rem;
+  }
+
+}
+  
+/*================= FOOTER ==============*/
+
+.footer {
+  font-size: 1.2rem;
+  height: 60px;
+  background-color: #2b2724;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.special-footer {
+  padding: 0.5rem;
+  color:#926d57;  
+}
+
+
+
+
+
+
+
+
+
+
+

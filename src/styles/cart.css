@@ -1,0 +1,240 @@
+/*=========================== CART LIST ============================================*/
+
+.list-cart{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    margin: 2rem auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+}
+  
+.list-cart .image{
+    width: 5rem;
+    height: 5rem;
+}
+  
+  .list-cart .title{
+    display: flex;
+    width: 150px;
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  .title .image{
+    max-width: 70px;
+  }
+
+  .title .info{
+    min-width: 80px;
+    font-size: 15px;
+  }
+
+  .add-cart-container{
+    display: flex;
+    align-items: center;
+  }
+
+  .list-cart .add-cart-container .btn-count{
+    margin: 2px 4px;
+    height: 15px;
+  }
+
+  .list-cart .add-cart-container .amount{
+    font-size: 15px;
+  }
+  
+  .list-cart .count-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .list-cart .btn-delete{
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-delete{
+    color: rgb(174, 81, 81);
+    cursor: pointer;
+  }
+  
+  .btn-delete:hover{
+    color: rgb(133, 46, 46);
+  }
+  
+  .login {
+    font-size: x-large;
+  }
+  
+  .btn-cart-content{
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-cart-content .btn-back{
+    font-size: 15px;
+    text-decoration: none;
+    padding: 3px 4px;
+    border-radius: 5px;
+    background-color: #8c6e5d;
+    color: #fff;
+  }
+  
+  .btn-cart-content .btn-back:hover{
+    background-color: #c89c83;
+    color: #000;
+  }
+  
+  .btn-clear-shopping{
+    font-size: 15px;
+    padding: 3px 4px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn-clear-shopping:hover{
+    background-color: #2b2724;
+  }
+
+  .subtotal {
+    display: none;
+  }
+
+  .cart-empty {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .cart-empty h2 {
+    font-size: 3rem;
+  }
+
+  .cart-empty .btn-back{
+    font-size: 18px;
+    text-decoration: none;
+    padding: 3px 4px;
+    border-radius: 5px;
+    background-color: #8c6e5d;
+    color: #fff;
+  }
+
+  .cart-empty .btn-back:hover{
+    background-color: #c89c83;
+    color: #000;
+  }
+
+@media screen and (min-width: 767px) {
+
+    .list-cart{
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .list-cart p {
+      width: 100px;
+    }
+
+    .title .info{
+        min-width: 200px;
+        font-size: 15px;
+    }
+
+    .subtotal {
+      display:contents;
+    }
+
+    .btn-cart-content{
+
+      max-width: 1000px;
+      padding: 0 20px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+}
+  
+  /*============================== CART TOTAL =====================================*/
+
+  .cart-total-container {
+    max-width: 330px;
+    padding: 15px;
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 5px;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .text-total{
+    padding: 5px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+  
+  .separation {
+    margin: 20px auto;
+    background-color: rgb(111, 111, 111);
+    width: 75%;
+    height: 0.5px;
+  }
+
+/*============================ ADD CART ==================================*/
+
+.cart{
+  min-height: 74.5vh;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-cart-container {
+  height: 2rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-count {
+  background-color: transparent;
+  width: 1.5rem;
+  margin: 0 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.amount {
+  font-size:large;
+}
+
+.btn-add-cart{
+  margin-bottom: 1rem;
+  cursor: pointer;
+}  

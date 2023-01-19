@@ -1,0 +1,95 @@
+.section-single-product{
+    height: 70vh;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+}
+
+.info-single {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.img-single-product {
+    max-height: 400px;
+    width: 350px;
+}
+
+.name-single-product {
+    font-size: 2rem;
+}
+
+.drink-data {
+    font-weight: bold;
+}
+
+.btn-single-product {
+    font-size: medium;
+    text-decoration: none;
+    border-radius: 5px;
+    width: auto;
+    padding: 5px 10px;
+    background-color: rgb(164, 137, 101);
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-back-product {
+    max-width: 100px;
+    margin: 0 auto 100px auto;
+    display: flex;
+    align-items: center;
+    font-size: medium;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-single-product:hover {
+    text-decoration: none;
+    background-color: rgb(198, 170, 132);
+    color: #000;
+}
+
+.btn-back-product:hover {
+    text-decoration: none;
+    background-color: rgb(36, 36, 36);
+    color: #fff;
+}
+
+.info-single .amount {
+    font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .img-single-product {
+        max-height: 500px;
+        min-width: 300px;
+    }
+
+    .section-single-product{
+
+        padding: 0 20px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .section-back {
+        height: 50px;
+    }
+
+    .btn-back-product {
+        margin-top: 30px;
+    }
+}
+
+

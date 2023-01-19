@@ -1,0 +1,356 @@
+/*====================== PRODUCT ===============================*/
+
+.products {
+    min-height: 78vh;
+}
+  
+.header-products {
+    font-size: 1.3rem;
+    background-color: #dbcbc1;
+    padding: 3rem 10%;
+}
+  
+.underline {
+    background-color: #000;
+    height: 1px;
+    width: 100%;
+}
+  
+.sort-by {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+  
+.list-products-container{
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+  
+.list-products-container .img-feactured{
+    height: 12rem;
+}
+  
+  
+/*====================== FILTER ===============================*/
+  
+.form-container{
+    padding: 1.5rem 0;
+}
+  
+.input-form{
+    background-color: aliceblue;
+    border: none;
+    width: 250px;
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 10px;
+}
+  
+.category-container{
+    padding: 2rem 0 1rem 0;
+}
+  
+  .name-filter {
+    font-size: 1.1rem;
+  }
+  
+  .select-company {
+    margin: 10px 0;
+    background-color: aliceblue;
+    border: none;
+    height: 25px;
+  }
+  
+  .btn-category-container{
+    display: flex;
+    flex-direction: column;
+    width: 5.5rem;
+    padding-top: 0.5rem;
+  }
+  
+  .btn-category{
+    color:rgb(85, 85, 85);
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0.4rem 0;
+  }
+  
+  .btn-category:hover{
+    transform: scale(1.1);
+  }
+  
+  .company-container{
+    margin-bottom: 15px ;
+  }
+  
+  .btn-clear{
+    border: none;
+    border-radius: 5px;
+    padding: 0;
+    width: 6rem;
+    font-size: 0.9rem;
+    height: 1.5rem;
+    color: #fff;
+    background-color: rgb(179, 48, 48);
+    cursor: pointer;
+  }
+  
+  .btn-clear:hover{
+    background-color: rgb(212, 89, 89);
+  }
+  
+  
+  /*===================================================*/
+  
+  .products-container {
+    padding: 0.5rem 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .order-container{
+    width: auto;
+    max-width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  
+  .img-product {
+    object-fit:cover;
+    height: 12rem;
+    width: 100%;
+  }
+  
+  .list-products .img-product{
+    border-radius: 5px;
+  }
+  
+  .header-product {
+    display: flex;
+    padding: 0.5rem 5px;
+  }
+  
+  .list-products-container .btn-img-product:hover{
+    filter: brightness(0.8);
+  }
+  
+  .btn-details-product {
+    width: 40px;
+    background-color: #926d57;
+    color: #fff;
+    border-radius: 5px;
+    font-size: small;
+    margin-bottom: 15px;
+    padding: 5px;
+    display: none;
+  }
+  
+  .btn-details-product:hover {
+    color: #000;
+    background-color: #c19277;
+    text-decoration: none;
+  }
+  
+  .text-product {
+    display: none;
+  }
+  
+  .order-list {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .order-list .img-product{
+    height: 10rem;
+    width: 15rem;
+  }
+  
+  .order-list .header-product{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .order-list .btn-details-product {
+    display:block;
+    cursor: pointer;
+  }
+  
+  .order-list .text-product {
+    display: block;
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+  }
+  
+  .order-list .product-container {
+    margin: 10px 0;
+    padding: 0;
+  }
+  
+  .list-products-container .product-container {
+    border: 1px solid rgb(135, 135, 135);
+    border-radius: 5px;
+  }
+  
+  .name-product{
+    font-size:15px;
+    padding-left: 5px;
+  }
+  
+  .price-product{
+    padding-right: 5px;
+  }
+  
+  .products-found {
+    width: auto;
+    margin: 10px 0;
+  }
+  
+  .products-sort {
+    min-width: 60px;
+    text-align: center;
+  }
+  
+  .sort-input {
+    border: none;
+    font-size: 1rem;
+    padding-top: 4px;
+  }
+  
+  .btn-order {
+    margin: 10px 8px 10px 0;
+    border-radius: 5px;
+    padding: 1.5px;
+    border: 1px solid #000;
+    height: auto;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  
+  .btn-order:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  
+  @media screen and (min-width: 950px) {
+    .products-container {
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 1.5rem;
+      margin: 30px auto;
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+  
+    .container-length {
+      display: flex;
+    }
+  
+    .order-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .filters {
+      padding: auto;
+      height: 100%;
+    }
+  
+    .products-found {
+      margin-left: 20px;
+    }
+  
+    .list-products {
+      padding: 0 30px;
+      height: 100%;
+    }
+  
+    .list-products-container{
+      padding-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 25px;
+    }
+  
+    .name-product{
+      font-size:15px;
+    }
+  
+    .order-list .product-container {
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+    }
+  
+    .order-list .list-product-info{
+      padding: 10px 20px;
+    }
+  
+    .order-list .img-product{
+      height: 90%;
+      width: 280px;
+    }
+  
+    .input-form {
+      width: 95%;
+    }
+  
+  }
+  
+  @media screen and (min-width: 767px) and (max-width: 950px) {
+    .products-container {
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 1.5rem;
+      /*margin: 30px 100px;*/
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+  
+    .container-length {
+      display: flex;
+      align-items: center;
+    }
+  
+    .order-container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .name-product{
+      font-size:large;
+    }
+  
+    .products-found {
+      margin-left: 20px;
+    }
+  
+    .list-products-container{
+      padding-top: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+  
+    .order-list .product-container {
+      display: flex;
+      margin: 10px;
+      flex-direction: column;
+    }
+  
+    .btn-order-container {
+      margin-top: 15px;
+    }
+  
+    .input-form {
+      width: 85%;
+    }
+  }

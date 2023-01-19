@@ -1,0 +1,80 @@
+/*====================== ABOUT ===============================*/
+
+.about {
+    min-height: 85vh;
+  }
+  
+  .header-about {
+    font-size: 1.5rem;
+    background-color: #dbcbc1;
+    padding: 3rem 2rem;
+  }
+  
+  .img-about-container {
+    width: auto;
+    height: 28rem;
+    padding: 4rem 1.5rem 2rem 1.5rem;
+  }
+  
+  .img-about {
+    border-radius: 10px;
+    height: 28rem;
+    width: 100%;
+  }
+  
+  .info-about{
+    padding: 0 1.5rem;
+  }
+  
+  .title-about{
+    padding: 0.5rem 0;
+  }
+  
+  .underline-about {
+    background-color: #000;
+    height: 0.3rem;
+    width: 5rem;
+  }
+  
+  .text-about {
+    padding: 2rem 0 4rem 0;
+  }
+  
+  @media screen and (min-width: 950px) {
+  
+    .info-container-about{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto 35px auto;
+    }
+  
+    .img-about-container {
+      padding: 5rem 0 5rem 18%;
+    }
+
+    .img-body, .img-body2 {
+      object-fit:cover;
+    }
+  
+    .img-about {
+      width: 100%;
+      height: 500px;
+      border-radius: 10px;
+    }
+  
+    .info-about {
+      width: 500px;
+      padding-top: 5rem;
+      line-height: 2rem;
+    }
+  
+    .header-about {
+      padding: 3rem 11%;
+    }
+  
+    .title-about {
+      font-size: 2.5rem;
+    }
+  }
